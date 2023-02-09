@@ -15,10 +15,17 @@ let pokemonList = [
 //  document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");
 //}
 
-for (let i = 0; i <pokemonList.length; i++) {
-  if (pokemonList[i].height>=5){
-    document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " " + " Wow, that is big!")}
-   else { document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " ")}
-   }
+  for (let i = 0; i <pokemonList.length; i++) { 
 
+  if (pokemonList[i].height>=5){
+  document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " " + " Wow, that is big!")}
+
+  else if (pokemonList[i].height>=4 && pokemonList[i].height<=3) {
+  document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " " + " That is a medium Pokemon!")}
+
+  else(pokemonList[i].height>=2 && pokemonList[i].height<=1);{ 
+  document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " " + " That is a small Pokemon!")} 
+
+}
+  
    // I cant add the string with the word height!!! 
