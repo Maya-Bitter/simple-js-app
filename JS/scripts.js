@@ -11,6 +11,14 @@ let pokemonList = [
   //document.write("<p>" + pokemonList[i].name);
 //}
 
+//for (let i = 0; i <pokemonList.length; i++) {
+//  document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");
+//}
+
 for (let i = 0; i <pokemonList.length; i++) {
-  document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");
-}
+  if (pokemonList[i].height>=5){
+    document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " " + " Wow, that is big!")}
+   else { document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " ")}
+   }
+
+   // I cant add the string with the word height!!! 
