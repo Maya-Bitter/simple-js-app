@@ -8,24 +8,23 @@ let pokemonList = [
 ];
 
 //for (let i = 0; i <pokemonList.length; i++) {
-  //document.write("<p>" + pokemonList[i].name);
+  //document.write('<p>' + pokemonList[i].name);
 //}
 
 //for (let i = 0; i <pokemonList.length; i++) {
-//  document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");
+//  document.write('<p>' + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");
 //}
 
   for (let i = 0; i <pokemonList.length; i++) { 
 
   if (pokemonList[i].height>=9){
-  document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " " + "-  Wow, that is big!")}
+  document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + "-  Wow, that is big!")}
 
   else if (pokemonList[i].height>=5 && pokemonList[i].height<=9) {
-  document.write("<p>" + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a medium Pokemon!")}
+  document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a medium Pokemon!")}
 
   else { 
-  document.write("<p>" + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");}
-
+  document.write('<p>' + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");}
 
 }
   
