@@ -50,13 +50,13 @@ h1 {
 
 font-size: var(--secondary-font-size);
 
+
    }
 
 h2 {
 
   font-size: var(--tertiary-font-size);
  
-
  }
 
 h3 { 
@@ -67,7 +67,6 @@ font-size: var(--quaternary-font-size);
 h4 { 
 
 font-size:var(--quinary-font-size);
-
 
 }
 
@@ -94,7 +93,9 @@ h6 {
     height: 90px;
   }  
 
-
+.head {
+  text-align: center;
+}
 
 
 
