@@ -1,9 +1,9 @@
 :root {
   
-    --primary-color: #cfe2f3; 
-    --secondary-color:#577d9f; 
-    --tertiary-color: #b6cfe6; 
-    --quaternary-color:#9ab7d2; 
+    --primary-color: #D8E3E7; 
+    --secondary-color :#126E82; 
+    --tertiary-color: #51C4D3;
+    --quaternary-color: #132C33;
     --quinary-color: #7f9fbc;	
     --senary-color: #1877F2;  
     --septenary-color:#c5000a; 
@@ -27,4 +27,74 @@
     --primary-line-height: 1.5;
   
       }
+  
+  body {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-family :var(--primary-font-family);
+        font-weight: var(--secondary-font-weight);
+        font-size: var(--primary-font-size);
+        line-height: var(--primary-line-height);
+      
+    } 
+     
+  h1, h2, h3, h4, h5, h6 {
+
+    font-weight: var(--secondary-font-weight);
+    color: var( --quaternary-color);
+    
+  }
+
+     
+  h1 { 
+
+  font-size: var(--secondary-font-size);
+
+     }
+
+  h2 {
+
+    font-size: var(--tertiary-font-size);
+   
+  
+   }
+
+  h3 { 
+  font-size: var(--quaternary-font-size);
+  
+  }
+
+  h4 { 
+
+  font-size:var(--quinary-font-size);
+
+
+  }
+
+  h5 {
+    font-size:var(--senary-font-size);
+
+  }
+
+  h6 {
+
+    font-size:var(--septenary-font-size);
+    
+  }
+
+  .page-header {
+  
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 10px;
+  background-color: var(--septenary-color);
+  border-color: var(--decenary-color);
+  border-style: outset;
+           
+    }
+
+  
+
   
