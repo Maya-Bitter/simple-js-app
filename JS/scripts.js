@@ -23,6 +23,9 @@ let pokemonList = [
   else if (pokemonList[i].height>=5 && pokemonList[i].height<=9) {
   document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a medium Pokemon!")}
 
+  else if (pokemonList[i].height>=1 && pokemonList[i].height<=4) {
+    document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a small Pokemon!")}
+
   else { 
   document.write('<p>' + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");}
 
