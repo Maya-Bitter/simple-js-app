@@ -91,6 +91,7 @@ h6 {
 }
 .page-header-item {
     flex: 0 1 100px;
+    height: 90px;
   }  
 
 
