@@ -15,20 +15,25 @@ let pokemonList = [
 //  document.write('<p>' + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");
 //}
 
-  for (let i = 0; i <pokemonList.length; i++) { 
+//  for (let i = 0; i <pokemonList.length; i++) { 
 
-  if (pokemonList[i].height>=9){
-  document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + "-  Wow, that is big!")}
+//  if (pokemonList[i].height>=9){
+//  document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + "-  Wow, that is big!")}
 
-  else if (pokemonList[i].height>=5 && pokemonList[i].height<=9) {
-  document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a medium Pokemon!")}
+//  else if (pokemonList[i].height>=5 && pokemonList[i].height<=9) {
+//  document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a medium Pokemon!")}
 
-  else if (pokemonList[i].height>=1 && pokemonList[i].height<=4) {
-    document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a small Pokemon!")}
+//  else if (pokemonList[i].height>=1 && pokemonList[i].height<=4) {
+//    document.write('<p>' + pokemonList[i].name + " " + pokemonList[i].height + " " + " -  That is a small Pokemon!")}
 
-  else { 
-  document.write('<p>' + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");}
+//  else { 
+//  document.write('<p>' + pokemonList[i].name + " (height: " + pokemonList[i].height + ")");}
 
-}
+//}
   
    // I cant add the string with the word height!!! 
+
+   for (let i = 0; i < pokemonList.length; i++){
+  document.write("<p>" + pokemonList[i].name + "</p>");} 
+
+  // example from the answers 
