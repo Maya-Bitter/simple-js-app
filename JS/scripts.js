@@ -33,7 +33,14 @@ let pokemonList = [
   
    // I cant add the string with the word height!!! 
 
+  // example from the answers:
+  // pokemon objects
+ 
    for (let i = 0; i < pokemonList.length; i++){
   document.write("<p>" + pokemonList[i].name + "</p>");} 
 
-  // example from the answers 
+  // printing pokemonList[i]’s other details
+
+  
+  
+
