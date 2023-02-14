@@ -7,6 +7,7 @@ let pokemonList = [
 
 ];
 
+let=Str ''; 
 
 //  for (let i = 0; i < pokemonList.length; i++){
 //  document.write("<p>" + pokemonList[i].name + "</p>");} 
@@ -34,9 +35,13 @@ let pokemonList = [
   
    // I cant add the string with the word height!!! 
 
-  // example from the answers:
-  // pokemon objects
- 
+    // Task 1.5 //
 
+    pokemonList.forEach(function(pokemon) {
+      document.write('<p>' + ' Name: ' + pokemon.name + ' Type: '+ pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
+   });
+    
+    pokemonListList.forEach(myLoopFunction);
+    
   
 
