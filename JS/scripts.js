@@ -7,8 +7,6 @@ let pokemonList = [
 
 ];
 
-let=Str ''; 
-
 //  for (let i = 0; i < pokemonList.length; i++){
 //  document.write("<p>" + pokemonList[i].name + "</p>");} 
 
@@ -41,7 +39,7 @@ let=Str '';
       document.write('<p>' + ' Name: ' + pokemon.name + ' Type: '+ pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
    });
     
-    pokemonListList.forEach(myLoopFunction);
+    pokemonListList.forEach(pokemon);
     
   
 
