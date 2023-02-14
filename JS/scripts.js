@@ -35,11 +35,16 @@ let pokemonList = [
 
     // Task 1.5 //
 
-    pokemonList.forEach(function(pokemon) {
-      document.write('<p>' + ' Name: ' + pokemon.name + ' Type: '+ pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
-   });
+   // pokemonList.forEach(function(pokemon) {
+   //   document.write('<p>' + ' Name: ' + pokemon.name + ' Type: ' + pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
+   //});
     
-    pokemonListList.forEach(pokemon);
+   // pokemonList.forEach(pokemon);
+
+   //Another option!!!: 
     
-  
+   function myLoopFunction(pokemon) {
+      document.write('<p>' + ' Name: ' + pokemon.name + ' Type: ' + pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
+        }
+     pokemonList.forEach(myLoopFunction);
 
