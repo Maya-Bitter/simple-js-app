@@ -43,8 +43,27 @@ let pokemonList = [
 
    //Another option!!!: 
     
-   function myLoopFunction(pokemon) {
-      document.write('<p>' + ' Name: ' + pokemon.name + ' Type: ' + pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
-        }
-     pokemonList.forEach(myLoopFunction);
+   //function myLoopFunction(pokemon) {
+   //   document.write('<p>' + ' Name: ' + pokemon.name + ' Type: ' + pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
+   //     }
+   //  pokemonList.forEach(myLoopFunction);
 
+// Task 1.5 part 2 //
+
+
+let pokemonRepository = (function () {
+   let pokemonList = [];
+ 
+   function add(pokemon) {
+     pokemonList.push(pokemon);
+   }
+ 
+   function getAll() {
+     return pokemonList;
+   }
+ 
+   return {
+     add: add,
+     getAll: getAll
+   };
+ })();
