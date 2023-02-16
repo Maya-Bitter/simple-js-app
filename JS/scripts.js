@@ -50,29 +50,29 @@ let pokemonList = [
 
 // Task 1.5 part 2 //
 
-let pokemonRepository = (function () {
-   let pokemonList = [{name: 'Bulbasaur', type: ['Grass', 'Poison'], height: '5', Category: 'Seed'}, 
-   {name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'}, 
-   {name: 'Venusaur', type: ['Grass', 'Poison'], height: '10', Category: 'Seed'},  
-   {name:'Charmander', type:'fire', height: '3', Category: 'Lizard'},   
-   {name: 'Charmeleon', type: 'fire', height: '3', Category: 'Flame'},];
+//let pokemonRepository = (function () {
+   //let pokemonList = [{name: 'Bulbasaur', type: ['Grass', 'Poison'], height: '5', Category: 'Seed'}, 
+   //{name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'}, 
+   //{name: 'Venusaur', type: ['Grass', 'Poison'], height: '10', Category: 'Seed'},  
+   //{name:'Charmander', type:'fire', height: '3', Category: 'Lizard'},   
+   //{name: 'Charmeleon', type: 'fire', height: '3', Category: 'Flame'},];
  
-   function add(pokemon) {
-     pokemonList.push(pokemon);
-   }
+   //function add(pokemon) {
+    // pokemonList.push(pokemon);
+   //}
  
-   function getAll() {
-     return pokemonList;
-   }
+   //function getAll() {
+   //  return pokemonList;
+   //}
     
-   return {
-     add: add,
-     getAll: getAll
+   //return {
+   //  add: add,
+   //  getAll: getAll
 
-   };
- })();
+  // };
+// })();
 
-pokemonRepository.getAll().forEach(function(pokemon) {
+//pokemonRepository.getAll().forEach(function(pokemon) {
 
-document.write('<p>' + ' Name: ' + pokemon.name + ' Type: ' + pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
-});
+//document.write('<p>' + ' Name: ' + pokemon.name + ' Type: ' + pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
+//});
