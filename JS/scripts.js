@@ -52,7 +52,11 @@ let pokemonList = [
 
 
 let pokemonRepository = (function () {
-   let pokemonList = [];
+   let pokemonList = [{name: 'Bulbasaur', type: ['Grass', 'Poison'], height: '5', Category: 'Seed'}, 
+   {name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'}, 
+   {name: 'Venusaur', type: ['Grass', 'Poison'], height: '10', Category: 'Seed'},  
+   {name:'Charmander', type:'fire', height: '3', Category: 'Lizard'},   
+   {name: 'Charmeleon', type: 'fire', height: '3', Category: 'Flame'},];
  
    function add(pokemon) {
      pokemonList.push(pokemon);
@@ -61,9 +65,16 @@ let pokemonRepository = (function () {
    function getAll() {
      return pokemonList;
    }
- 
+
+    
    return {
      add: add,
      getAll: getAll
+
    };
  })();
+
+pokemonRepository.getAll().forEach(function (pokemon) {
+
+document.write('<p>' + ' Name: ' + pokemon.name + ' Type: ' + pokemon.type + ' Height: ' + pokemon.height + ' Category: ' + pokemon.Category + '');
+});
