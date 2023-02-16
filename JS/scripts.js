@@ -50,7 +50,6 @@ let pokemonList = [
 
 // Task 1.5 part 2 //
 
-
 let pokemonRepository = (function () {
    let pokemonList = [{name: 'Bulbasaur', type: ['Grass', 'Poison'], height: '5', Category: 'Seed'}, 
    {name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'}, 
@@ -65,7 +64,6 @@ let pokemonRepository = (function () {
    function getAll() {
      return pokemonList;
    }
-
     
    return {
      add: add,
