@@ -35,8 +35,7 @@ body {
       font-weight: var(--secondary-font-weight);
       font-size: var(--primary-font-size);
       line-height: var(--primary-line-height);
-      text-align: center;
-      
+        
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -50,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 { 
 
 font-size: var(--secondary-font-size);
+text-align: center;
 
 
    }
@@ -92,7 +92,7 @@ h6 {
 .page-header-item {
     flex: 0 1 100px;
     height: 90px;
-  }  
+     }  
 
 .head {
   text-align: center;
@@ -122,3 +122,11 @@ ul li {
   
 }
 
+.pokemon-list {
+
+max-width: 400px;
+margin: 20px auto;
+padding: 10px;
+border: 2px solid #0000ff;
+
+}
