@@ -1,9 +1,18 @@
-let pokemonList = [
-{name: 'Bulbasaur', type: ['Grass', 'Poison'], height: '5', Category: 'Seed'}, 
-{name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'}, 
-{name: 'Venusaur', type: ['Grass', 'Poison'], height: '10', Category: 'Seed'},  
-{name:'Charmander', type:'fire', height: '3', Category: 'Lizard'},   
-{name: 'Charmeleon', type: 'fire', height: '3', Category: 'Flame'},  
+let pokemonList = 
+
+  [
+
+  {name: 'Bulbasaur', type: ['Grass', 'Poison'], height: '5', Category: 'Seed'}, 
+  {name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'}, 
+  {name: 'Venusaur', type: ['Grass', 'Poison'], height: '10', Category: 'Seed'},  
+  {name:'Charmander', type:'fire', height: '3', Category: 'Lizard'},   
+  {name: 'Charmeleon', type: 'fire', height: '3', Category: 'Flame'},
+  {name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'},
+  {name:'Charizard ', type: ['fire', 'flying'], height: '5', Category: 'Flame'},
+  {name:'Squirtle ', type: 'Water', height: '1', Category: 'Tiny Turtle'},
+  {name:'Wartortle ', type: 'Water', height: '3', Category: 'Turtle'},
+  {name:'Blastoise  ', type: 'Water', height: '3', Category: 'Shellfish'},
+  {name:'Caterpie  ', type: 'Bug', height: '5', Category: 'warm'},
 
 ];
 
@@ -55,7 +64,15 @@ let pokemonList = [
   {name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'}, 
   {name: 'Venusaur', type: ['Grass', 'Poison'], height: '10', Category: 'Seed'},  
   {name:'Charmander', type:'fire', height: '3', Category: 'Lizard'},   
-  {name: 'Charmeleon', type: 'fire', height: '3', Category: 'Flame'},];
+  {name: 'Charmeleon', type: 'fire', height: '3', Category: 'Flame'},
+  {name:'Ivysaur', type: ['Grass', 'Poison'], height: '7', Category: 'Seed'},
+  {name:'Charizard ', type: ['fire', 'flying'], height: '5', Category: 'Flame'},
+  {name:'Squirtle ', type: 'Water', height: '1', Category: 'Tiny Turtle'},
+  {name:'Wartortle ', type: 'Water', height: '3', Category: 'Turtle'},
+  {name:'Blastoise  ', type: 'Water', height: '3', Category: 'Shellfish'},
+  {name:'Caterpie  ', type: 'Bug', height: '5', Category: 'warm'},
+
+];
  
    function add(pokemon) {
 
