@@ -62,3 +62,10 @@ pokemonRepository.getAll().forEach(function(pokemon) {
 pokemonRepository.addListItem(pokemon);
 });
 
+fetch('https://pokeapi.co/api/v2/pokemon/').then(function (response) { // sends a message to the specified API, requesting the list of Pokémon.//
+  return response.json(); // This returns a promise! When the promise is resolved, an HTTP response containing the list of Pokémon is passed to the response parameter in the callback function of the first .then() block.
+}).then(function (pokemonList) {
+  console.log(pokemonList); // The actual JSON response
+}).catch(function () {
+  // Error
+});
