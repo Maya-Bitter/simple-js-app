@@ -26,11 +26,7 @@
     button.classList.add("button-class");
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
-    //add event//
-    button.addEventListener("click", function(event) {
-      showDetails(pokemon);
-
-    });
+      
     }
 
     // promise function //
