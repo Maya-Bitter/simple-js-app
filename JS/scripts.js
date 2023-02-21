@@ -73,9 +73,7 @@
     getAll: getAll,
     addListItem: addListItem,
     loadList: loadList,
-    loadDetails,
-    showDetails: showDetails
-  
+    
   };
 
    })();
