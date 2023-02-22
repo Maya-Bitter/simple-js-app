@@ -157,8 +157,7 @@ pokemonRepository.loadList().then(function() {
         dialogPromiseReject = reject;
       });
     }
-  
-    
+      
     document.querySelector('#show-modal').addEventListener('click', () => {
       showModal('Modal title', 'This is the modal content!');
     });
@@ -170,9 +169,7 @@ pokemonRepository.loadList().then(function() {
         alert('not confirmed');
       });
     });
-  
-  
-    
+        
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
         hideModal();  
