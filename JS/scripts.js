@@ -51,6 +51,7 @@
         return response.json();
       }).then(function (details) {
         // Now we add the details to the item
+        item.name = details.name;
         item.imageUrl = details.sprites.front_default;
         item.height = details.height;
         item.types = details.types;
