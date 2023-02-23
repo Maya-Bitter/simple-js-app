@@ -55,22 +55,6 @@
         console.error(e);
       });
     }
-
-    function showDetails(item) {
-      pokemonRepository.loadDetails(item).then(function () {
-        console.log(item);
-      });
-    }
-  
-    return {
-    add: add,
-    getAll: getAll,
-    addListItem: addListItem,
-    loadList: loadList,
-    loadDetails: loadDetails,
-    showDetails: showDetails
-  };
-})();
   
 (function() {
   
@@ -119,6 +103,21 @@
     }
   });
 
+  function showDetails (pokemon) {
+    showModal(pokemon);
+
+  }
+
+  return {
+    add: add,
+    getAll: getAll,
+    addListItem: addListItem,
+    loadList: loadList,
+    loadDetails: loadDetails,
+    showDetails: showDetails
+  };
+})();
+
   document.querySelector('#show-modal').addEventListener('click', () => {
     showModal('Modal title', 'This is the modal content!');
   });
@@ -130,4 +129,3 @@
      
     });
   });
-})();
