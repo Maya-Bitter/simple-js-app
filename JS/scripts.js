@@ -47,6 +47,7 @@
         return response.json();
       }).then(function (details) {
         // Now we add the details to the item
+        
         item.imageUrl = details.sprites.front_default;
         item.height = details.height;
         item.types = details.types;
@@ -75,7 +76,7 @@
   
   let modalContainer = document.querySelector('#modal-container');
   
-  function showModal(title, text) {
+  function showModal(pokemon) {
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
     modal.classList.add('modal');
@@ -86,10 +87,10 @@
     closeButtonElement.addEventListener('click', hideModal);
 
     let titleElement = document.createElement('h1');
-    titleElement.innerText = title;
+    titleElement.innerText = pokemon.name;
 
     let contentElement = document.createElement('p');
-    contentElement.innerText = text;
+    contentElement.innerText = pokemon.height;
 
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
