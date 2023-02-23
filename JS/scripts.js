@@ -3,24 +3,20 @@
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   function add(pokemon) {
-
-   pokemonList.push(pokemon);
-
-    }
+  pokemonList.push(pokemon);
+  }
  
   function getAll() {
-
-    return pokemonList;
+  return pokemonList;
 
    }
 
     function addListItem(pokemon) {
-
     let pokemonList = document.querySelector(".pokemon-list");
     let listpokemon = document.createElement("li");
     let button = document.createElement("button");
     button.addEventListener('click', function() {
-      showDetails(pokemon);
+      loadDetails(pokemon);
     })
     button.innerText = pokemon.name;
     button.classList.add("button-class");
