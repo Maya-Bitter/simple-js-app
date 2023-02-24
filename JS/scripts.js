@@ -56,8 +56,6 @@
       });
     }
   
-(function() {
-  
   let modalContainer = document.querySelector('#modal-container');
   
   function showModal(pokemon) {
@@ -103,7 +101,7 @@
     }
   });
 
-  function showDetails (pokemon) {
+  function showDetails(pokemon) {
     showModal(pokemon);
 
   }
@@ -117,10 +115,6 @@
     showDetails: showDetails
   };
 })();
-
-  document.querySelector('#show-modal').addEventListener('click', () => {
-    showModal('Modal title', 'This is the modal content!');
-  });
 
   pokemonRepository.loadList().then(function() {
     // Now the data is loaded!
