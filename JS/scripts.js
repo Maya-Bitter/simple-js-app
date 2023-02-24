@@ -9,15 +9,9 @@ let pokemonRepository = (function () {
   return pokemonList;
    }
     function addListItem(pokemon) {
-
-    let pokemonList = document.querySelector(".pokemon-list"
-);
+    let pokemonList = document.querySelector(".pokemon-list");
     let listpokemon = document.createElement("li");
-
-listPokemon.classList.add('group-list-item')
-
     let button = document.createElement("button");
-
     button.addEventListener('click', function() {
       loadDetails(pokemon);
     })
@@ -137,4 +131,5 @@ listPokemon.classList.add('group-list-item')
       pokemonRepository.addListItem(pokemon);
 
     });
+
 
