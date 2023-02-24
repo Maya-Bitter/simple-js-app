@@ -47,10 +47,10 @@
         return response.json();
       }).then(function (details) {
         // Now we add the details to the item
-        
         item.imageUrl = details.sprites.front_default;
         item.height = details.height;
         item.types = details.types;
+        showDetails(item);
       }).catch(function (e) {
         console.error(e);
       });
@@ -101,6 +101,10 @@
     }
   });
 
+  document.querySelector('#show-modal').addEventListener('click', () => {
+    showModal('Modal title', 'This is the modal content!');
+  });
+
   function showDetails(pokemon) {
     showModal(pokemon);
 
@@ -122,4 +126,5 @@
       pokemonRepository.addListItem(pokemon);
      
     });
-  });
+ 
+});
