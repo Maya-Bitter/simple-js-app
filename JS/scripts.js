@@ -14,7 +14,7 @@ let pokemonRepository = (function () {
     let pokemonList = document.querySelector(".pokemon-list");
     let listpokemon = document.createElement("li");
     let button = document.createElement("button");
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function() { // doesn work // 
       showDetails(pokemon);
     })
     button.innerText = pokemon.name;
