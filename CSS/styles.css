@@ -170,10 +170,17 @@ border: 2px solid #0000ff;
 .modal-close {
   float: right;
   -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  border-radius: 10%;
 }
 
 .modal h1 {
