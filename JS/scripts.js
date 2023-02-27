@@ -65,7 +65,7 @@ let pokemonRepository = (function () {
     let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
-    closeButtonElement.addEventListener('click', hideModal);
+    closeButtonElement.addEventListener('click', hideModal); // the eventlistener doesnt work // 
 
     let titleElement = document.createElement('h1');
     titleElement.innerText = pokemon.name;
@@ -75,7 +75,6 @@ let pokemonRepository = (function () {
 
     let imageElement = document.createElement('img');
     imageElement.src = pokemon.imageUrl; // added img element // 
-
 
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
@@ -106,7 +105,7 @@ let pokemonRepository = (function () {
   });
 
   
-  //function showDetails(pokemon) {
+  //function showDetails(pokemon) { changed this function to the one bellow // 
    // showModal(pokemon);
 
   //}

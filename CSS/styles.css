@@ -178,8 +178,10 @@ border: 2px solid #0000ff;
 
 .modal h1 {
   margin-top: 0;
+  color: #0000ff;
 }
 
 .modal p {
-  margin-bottom: 0;
+  margin-left: auto;
+  color: #0000ff;
 }
