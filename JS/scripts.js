@@ -15,7 +15,7 @@ let pokemonRepository = (function () {
     let listpokemon = document.createElement("li");
     let button = document.createElement("button");
     button.addEventListener('click', function() { // doesn work // 
-      showDetails(pokemon);
+   showDetails(pokemon); // should I have here loadDeatails or showDetails? // 
     })
     button.innerText = pokemon.name;
     button.classList.add("button-class");
