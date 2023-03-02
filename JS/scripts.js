@@ -58,7 +58,7 @@ let pokemonRepository = (function () {
   
   let modalContainer = document.querySelector('#modal-container');
 
-    function showModal(pokemon) {
+    function showModal(pokemon) { // should I delete this function and write a new one? // 
 
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
@@ -68,6 +68,17 @@ let pokemonRepository = (function () {
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
     closeButtonElement.addEventListener('click', hideModal); 
+
+    // from the video //
+
+    //function showModal(item) {
+
+     // let modalBody = $(".modal-body");
+    //  let modalTitle = $(".modal-title");
+    //  let modalHeader = $(".modal-Header");
+  
+    //  modalTitle.empty();
+    //  modalBody.empty();
 
       // creating element for name in modal content //
       //let nameElement = $("<h1>") + item.name + "</h1>");
