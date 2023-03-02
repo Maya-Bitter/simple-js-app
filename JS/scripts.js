@@ -56,9 +56,9 @@ let pokemonRepository = (function () {
       });
     }
   
-let modalContainer = document.querySelector('#modal-container');
+  let modalContainer = document.querySelector('#modal-container');
 
-    function showModal(item) {
+    function showModal(pokemon) {
 
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
@@ -93,6 +93,7 @@ let modalContainer = document.querySelector('#modal-container');
       //modalTitle.append(typeElement);
       //modalTitle.append(abilitiesElement);
 
+      
       let titleElement = document.createElement('h1');
       titleElement.innerText = pokemon.name;
 
