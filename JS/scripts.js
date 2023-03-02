@@ -14,8 +14,8 @@ let pokemonRepository = (function () {
     let pokemonList = document.querySelector(".pokemon-list");
     let listpokemon = document.createElement("li");
     let button = document.createElement("button");
-    button.addEventListener('click', function() { // doesn work // 
-   showDetails(pokemon); // should I have here loadDeatails or showDetails? // 
+    button.addEventListener('click', function() { 
+   showDetails(pokemon); 
     })
     button.innerText = pokemon.name;
     button.classList.add("button-class");
@@ -49,15 +49,17 @@ let pokemonRepository = (function () {
         item.imageUrl = details.sprites.front_default;
         item.height = details.height;
         item.types = details.types;
+
        
       }).catch(function (e) {
         console.error(e);
       });
     }
   
-  let modalContainer = document.querySelector('#modal-container');
+let modalContainer = document.querySelector('#modal-container');
 
-  function showModal(pokemon) {
+    function showModal(item) {
+
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
     modal.classList.add('modal');
@@ -65,26 +67,50 @@ let pokemonRepository = (function () {
     let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
-    closeButtonElement.addEventListener('click', hideModal); // the eventlistener doesnt work // 
+    closeButtonElement.addEventListener('click', hideModal); 
 
-    let titleElement = document.createElement('h1');
-    titleElement.innerText = pokemon.name;
+      // creating element for name in modal content //
+      let nameElement = $("<h1>") + item.name + "</h1>");
+      // creating img in modal content //
+      let imageElementFront = $('<img class = "modal-img" style=width:50%">');
+      imageElementFront.attr("src", item.imageUrlFront);
+      let imageElementBack = $('<img class = "modal-img"style=width:50%">');
+      imageElementBack.attr("src", item.imageUrlBack);
+      // create element for height in modal content
+      let heightElement = $("<p>" + 'height' : + item.height + <"/p>");
+      // create element for weight in modal content
+      let weightElement = $("<p>" + 'weight' : + item.weight + <"/p>");
+      // create element for type in modal content
+      let typetElement = $("<p>" + 'type' : + item.type + </p>");
+      // create element for abilities in modal content
+      let abilitiesElement= $("<p>" + 'abilities' : + item.abilities + "</p>");
 
-    let contentElement = document.createElement('p');
-    contentElement.innerText =('Height =  ') + pokemon.height;
+      modalTitle.append(nameElement);
+      modalBody.append(imageElementFront);
+      modalBody.append(imageElementBack);
+      modalTitle.append(heightElement);
+      modalTitle.append(weightElement);
+      modalTitle.append(typeElement);
+      modalTitle.append(abilitiesElement);
 
-    let imageElement = document.createElement('img');
-    imageElement.src = pokemon.imageUrl; 
+      let titleElement = document.createElement('h1');
+      titleElement.innerText = pokemon.name;
 
-    modal.appendChild(closeButtonElement);
-    modal.appendChild(titleElement);
-    modal.appendChild(contentElement);
-    modal.appendChild(imageElement); 
-    modalContainer.appendChild(modal);
-    
-    modalContainer.classList.add('is-visible');
+      let contentElement = document.createElement('p');
+      contentElement.innerText =('Height =  ') + pokemon.height;
 
-      }
+      let imageElement = document.createElement('img');
+      imageElement.src = pokemon.imageUrl; 
+
+  modal.appendChild(closeButtonElement);
+  modal.appendChild(titleElement);
+  modal.appendChild(contentElement);
+  modal.appendChild(imageElement); 
+  modalContainer.appendChild(modal);
+
+  modalContainer.classList.add('is-visible');
+
+  }
 
       function hideModal() {
     modalContainer.classList.remove('is-visible');
@@ -110,6 +136,7 @@ let pokemonRepository = (function () {
     });
   };
 
+  
   return {
     add: add,
     getAll: getAll,
