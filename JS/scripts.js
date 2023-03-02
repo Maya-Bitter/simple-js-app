@@ -70,28 +70,28 @@ let modalContainer = document.querySelector('#modal-container');
     closeButtonElement.addEventListener('click', hideModal); 
 
       // creating element for name in modal content //
-      let nameElement = $("<h1>") + item.name + "</h1>");
+      //let nameElement = $("<h1>") + item.name + "</h1>");
       // creating img in modal content //
-      let imageElementFront = $('<img class = "modal-img" style=width:50%">');
-      imageElementFront.attr("src", item.imageUrlFront);
-      let imageElementBack = $('<img class = "modal-img"style=width:50%">');
-      imageElementBack.attr("src", item.imageUrlBack);
+      //let imageElementFront = $('<img class = "modal-img" style=width:50%">');
+      //imageElementFront.attr("src", item.imageUrlFront);
+      //let imageElementBack = $('<img class = "modal-img"style=width:50%">');
+      //imageElementBack.attr("src", item.imageUrlBack);
       // create element for height in modal content
-      let heightElement = $("<p>" + 'height' : + item.height + <"/p>");
+      //let heightElement = $("<p>" + 'height' : + item.height + <"/p>");
       // create element for weight in modal content
-      let weightElement = $("<p>" + 'weight' : + item.weight + <"/p>");
+      //let weightElement = $("<p>" + 'weight' : + item.weight + <"/p>");
       // create element for type in modal content
-      let typetElement = $("<p>" + 'type' : + item.type + </p>");
+      //let typetElement = $("<p>" + 'type' : + item.type + </p>");
       // create element for abilities in modal content
-      let abilitiesElement= $("<p>" + 'abilities' : + item.abilities + "</p>");
+     // let abilitiesElement= $("<p>" + 'abilities' : + item.abilities + "</p>");
 
-      modalTitle.append(nameElement);
-      modalBody.append(imageElementFront);
-      modalBody.append(imageElementBack);
-      modalTitle.append(heightElement);
-      modalTitle.append(weightElement);
-      modalTitle.append(typeElement);
-      modalTitle.append(abilitiesElement);
+      //modalTitle.append(nameElement);
+      //modalBody.append(imageElementFront);
+      //modalBody.append(imageElementBack);
+      //modalTitle.append(heightElement);
+      //modalTitle.append(weightElement);
+      //modalTitle.append(typeElement);
+      //modalTitle.append(abilitiesElement);
 
       let titleElement = document.createElement('h1');
       titleElement.innerText = pokemon.name;
