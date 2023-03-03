@@ -62,7 +62,7 @@ let pokemonRepository = (function () {
     function showModal(pokemon) { 
 
     let titleElement = document.querySelector('#exampleModalLabel');
-    let modalBody = document.querySelector('#modalBody');
+    let modalBody = document.querySelector('.modalBody');
 
     titleElement.innerHTML = '';
     modalBody.innerHTML = '';
