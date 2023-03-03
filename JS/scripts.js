@@ -19,7 +19,7 @@ let pokemonRepository = (function () {
     })
     button.innerText = pokemon.name;
     button.classList.add("btn"); 
-    listpokemon.appendChild(btn-primary);
+    listpokemon.appendChild("btn-primary");
     button.dataset.toggle = "modal"
     button.dataset.target = "#exampleModal"
     listpokemon.appendChild(button);
