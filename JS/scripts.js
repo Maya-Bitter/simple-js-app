@@ -97,7 +97,7 @@ let pokemonRepository = (function () {
     showDetails: showDetails,
     showModal: showModal
   };
-})();
+}})();
 
   pokemonRepository.loadList().then(function() {
     // Now the data is loaded!
