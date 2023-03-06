@@ -14,7 +14,7 @@ let pokemonRepository = (function () {
     let pokemonList = document.querySelector(".pokemon-list"); 
     let listpokemon = document.createElement("li");
 
-    createlistItem.classList.add("list-group-item") //added // 
+    // createlistItem.classList.add("list-group-item") //added // 
     
     let button = document.createElement("button");
     button.addEventListener('click', function() { 
@@ -84,6 +84,7 @@ let pokemonRepository = (function () {
     modalBody.appendChild(contentElement);
 
     modalBody.append(imageElement);
+    }
 
      function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
@@ -100,7 +101,8 @@ let pokemonRepository = (function () {
     showDetails: showDetails,
     showModal: showModal
   };
-}})();
+
+  })();
 
   pokemonRepository.loadList().then(function() {
     // Now the data is loaded!
