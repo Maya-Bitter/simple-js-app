@@ -36,14 +36,14 @@ body {
 li {
   
 padding: 5px;
- list-style-type: none;
- display: inline-block;
+list-style-type: none;
+display: inline-block;
        
   }
  
-  .text-info { 
+.text-info { 
  
-    font-size: 28px;
-    text-align: center;
+font-size: 28px;
+text-align: center;
     
 }
